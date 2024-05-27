@@ -493,4 +493,61 @@ const goToHome = () => {
 .event-form button {
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .calendar header h2 {
+    font-size: 2em;
+  }
+
+  .view-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .view-buttons button,
+  .nav-button,
+  .create-button {
+    margin: 5px 0;
+    width: 80%;
+    padding: 0.6em;
+    font-size: 0.8rem;
+  }
+
+  .calendar-view.day {
+    height: auto;
+  }
+
+  .calendar-view.week,
+  .calendar-view.month {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .day.day,
+  .day.week,
+  .day.month {
+    border: 1px solid #ddd;
+  }
+
+  .hours {
+    height: auto;
+  }
+
+  .hour {
+    height: 3rem;
+  }
+
+  .hour-label {
+    font-size: 0.6rem;
+  }
+
+  .event {
+    height: 3rem;
+  }
+
+  .event-form {
+    width: 90%;
+    padding: 10px;
+  }
+}
 </style>
