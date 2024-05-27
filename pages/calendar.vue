@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>Calendar</h1>
+  <div class="calendar">
+    <h1 class="calendar-header">Calendar</h1>
     <CalendarComponent />
   </div>
 </template>
@@ -14,5 +14,7 @@ definePageMeta({
 </script>
 
 <style scoped>
-/* Добавьте стили для страницы календаря */
+.calendar-header {
+  font-size: 2em;
+}
 </style>
